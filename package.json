@@ -11,5 +11,8 @@
     "url": "\u0016https://github.com/nicolascarvalhobandtec/Meu_Reposit-rio.git"
   },
   "author": "Nicolas Carvalho\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[\"Nicolas_Carvalho\"",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "rellax": "^1.12.1"
+  }
 }

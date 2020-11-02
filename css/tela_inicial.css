@@ -2,6 +2,7 @@
 
 
 body {
+    margin: 0;
      font-family: monospace;
      /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
      /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
@@ -28,6 +29,10 @@ body {
 .plano_fundo img {
     width: 100%;
     margin: -1px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .texto1 {
@@ -45,6 +50,11 @@ body {
 .cidade img {
     height: 500px;
     width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
 }
 
 .texto2 {
@@ -65,4 +75,11 @@ body {
     height: 45px;
     width: 100px;
     font-family: monospace;
+}
+
+.embaixo {
+    background-color: rgba(92, 92, 92, 0.363);
+    height: 100px;
+    margin-top: 20px;
+    
 }
