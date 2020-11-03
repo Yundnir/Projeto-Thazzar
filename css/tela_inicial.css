@@ -36,31 +36,53 @@ body {
 }
 
 .texto1 {
-    border-radius: 5px white solid;
     height: 100px;
     width: 80%;
     margin-left: 10%;
-    margin-top: 30px;
-    margin-bottom: 80px;
+    margin-top: 70px;
+    margin-bottom: 185px;
     text-align: center;
     padding-top: 10px;
     font-size: 20px;
 }
 
 .cidade img {
-    height: 500px;
+    height: 70vh;
     width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  
 }
 
 .texto2 {
-    border-radius: 5px white solid;
     height: 240px;
     width: 80%;
+    margin-left: 10%;
+    margin-top: 95px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.local_login {
+    background-color: white;
+    height: 400px;
+    width: 100%;
+}
+
+.local_login img {
+    height: 400px;
+    margin-left: 638px;
+}
+
+.local_login .texto_login {
+    color: black;
+    position: absolute;
+}
+
+.texto_final {
+    height: 240px;
     margin-left: 10%;
     margin-top: 80px;
     text-align: center;
@@ -68,18 +90,56 @@ body {
     font-size: 20px;
 }
 
-.div_botao .o_botao {
-    background-color: rgb(50, 156, 223);
-    border-radius: 10px;
-    margin-left: 630px;
-    height: 45px;
-    width: 100px;
-    font-family: monospace;
+h1 {
+    color: black;
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 40px;
 }
 
-.embaixo {
+.nome {
+    font-family: monospace; 
+    text-align: center;
+    margin-top: 95px;
+    margin-left: 210px;
+    background-color: transparent;
+    border: none;
+    border-bottom: black 3px solid;
+    color: black;
+    height: 30px;
+    width: 200px;
+}
+
+.senha {
+    font-family: monospace;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 210px;
+    background-color: transparent;
+    border: none;
+    border-bottom: black 3px solid;
+    color: black;
+    height: 30px;
+    width: 200px;
+}
+
+.div_botao .o_botao {
+    position: absolute;
+    background-color: black;
+    border-radius: 25px;
+    border: 1px;
+    margin-top: 280px;
+    margin-left: 260px;
+    height: 35px;
+    width: 100px;
+    font-family: monospace;
+    color: white;   
+}
+
+
+/* .embaixo {
     background-color: rgba(92, 92, 92, 0.363);
     height: 100px;
     margin-top: 20px;
     
-}
+} */
