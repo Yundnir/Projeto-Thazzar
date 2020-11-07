@@ -101,6 +101,8 @@ ________________________________________________________________________________
 
   <!-- Próximas etapas: 
 
+      Arrumar o javascript do login/cadastro;
+     
       Fazer o esquema de parallax e rellax na página inicial (TESTAR);
 
       Pensar no desenvolvimento do menu após o login.
@@ -109,11 +111,9 @@ ________________________________________________________________________________
 
 </head>
 
-<body>
+<body>               
 
-  <embed src="" hidden="true" loop="infinite" autostart="TRUE">
-    <!-- <embed src="early_game.mp3" hidden="true" loop="infinite" autostart="TRUE"> -->
-
+  <embed src="musicas/torre_tempo.mp3" hidden="true" loop="infinite" autostart="TRUE">
 
   <div class="plano_fundo">
 
@@ -170,10 +170,10 @@ ________________________________________________________________________________
   <div class="login_cadastro">
 
     <!-- Início do Login -->
-    <div class="texto_login" style="display: block">
+    <div id="tela_login" style="display: block">
 
       <div class="rift">
-        <img src="img/riften.jpg" alt="Catedral">
+        <img src="img/vila.jpg" alt="Catedral">
       </div>
 
       <h1 class="titulo_login"> Entre com a sua conta cadastrada </h1>
@@ -184,7 +184,7 @@ ________________________________________________________________________________
         <br>
         <button onclick="adentrar()" class="botao_adentrar"> Adentre! </button>
 
-        <button onclick="cadastro()" class="botao_cadastro"> Cadastre-se </button>
+        <button onclick="entrar_cadastro()" class="botao_cadastro"> Cadastre-se </button>
 
     </div>
     <!-- Fim do Login -->
@@ -192,9 +192,9 @@ ________________________________________________________________________________
 
 
     <!-- Início do Cadastro -->
-    <div class="cadastro" style="display: none">
+    <div id="tela_cadastro" style="display: none">
 
-      <button onclick="voltar()" class="botao_voltar"> Voltar a Login </button>
+      <button onclick="voltar()" class="botao_volta"> Voltar </button>
 
       <h1 class="titulo_cadastro"> Crie a sua conta aqui </h1>
 
@@ -226,28 +226,34 @@ ________________________________________________________________________________
     preencher com um conteúdo enriquecedor e interessante
     Colocar o nome da minha equipe (Triad Team)
    -->
-  <footer class="embaixo">
-    Triad Team
+   <footer class="tracejado">
+     <!-- Literalmente só o tracejado em cima do footer -->
+   </footer>
+   <footer class="embaixo">
+    <p class="triad_footer">
+      Triad Team ©
+    </p>
+
   </footer>
     
 </body>
 
 </html>
 
-<script src="rellax.min.js"></script>
+<!-- <script src="rellax.min.js"></script> -->
 
-<script>
+<!-- <script>
   var rellax = new Rellax('.rellax');
-</script>
+</script> -->
 
 <script>
-  function cadastro() {
-    texto_login.style.display = `none`;
-    cadastro.style.display = `block`;
+  function entrar_cadastro() {
+    tela_login.style.display = "none";
+    tela_cadastro.style.display = "block";
   }
 
   function voltar() {
-    cadastro.style.display = `none`;
-    texto_login.style.display = `block`;
+    tela_cadastro.style.display = "none";
+    tela_login.style.display = "block";
   }
 </script>
