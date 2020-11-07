@@ -111,6 +111,10 @@ ________________________________________________________________________________
 
 <body>
 
+  <embed src="" hidden="true" loop="infinite" autostart="TRUE">
+    <!-- <embed src="early_game.mp3" hidden="true" loop="infinite" autostart="TRUE"> -->
+
+
   <div class="plano_fundo">
 
     <div class="titulos">
@@ -148,7 +152,7 @@ ________________________________________________________________________________
     <br>
 
     <div class="cidade">
-      <img src="img/kifflr.png" alt="Kifflr">
+      <img src="img/fantasycity.jpg" alt="Kifflr">
     </div>
 
     <p class="texto2"> Se você REALMENTE quiser saber mais sobre estes seres e descobrir
@@ -166,7 +170,7 @@ ________________________________________________________________________________
   <div class="login_cadastro">
 
     <!-- Início do Login -->
-    <div class="texto_login" style="display: none">
+    <div class="texto_login" style="display: block">
 
       <div class="rift">
         <img src="img/riften.jpg" alt="Catedral">
@@ -180,7 +184,7 @@ ________________________________________________________________________________
         <br>
         <button onclick="adentrar()" class="botao_adentrar"> Adentre! </button>
 
-        <button onclick="cadastrar()" class="botao_cadastro"> Cadastre-se! </button>
+        <button onclick="cadastro()" class="botao_cadastro"> Cadastre-se </button>
 
     </div>
     <!-- Fim do Login -->
@@ -188,7 +192,9 @@ ________________________________________________________________________________
 
 
     <!-- Início do Cadastro -->
-    <div class="cadastro" style="display: block">
+    <div class="cadastro" style="display: none">
+
+      <button onclick="voltar()" class="botao_voltar"> Voltar a Login </button>
 
       <h1 class="titulo_cadastro"> Crie a sua conta aqui </h1>
 
@@ -203,6 +209,8 @@ ________________________________________________________________________________
         <input type="password" class="senha_cadastro" placeholder="Insira uma Senha de Acesso">
         <br>
         <button onclick="cadastrar()" class="confirmar_cadastro"> Confirmar Cadastro </button>
+
+
 
     </div>
     <!-- Fim do Cadastro -->
@@ -232,4 +240,14 @@ ________________________________________________________________________________
   var rellax = new Rellax('.rellax');
 </script>
 
+<script>
+  function cadastro() {
+    texto_login.style.display = `none`;
+    cadastro.style.display = `block`;
+  }
 
+  function voltar() {
+    cadastro.style.display = `none`;
+    texto_login.style.display = `block`;
+  }
+</script>

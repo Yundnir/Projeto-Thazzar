@@ -162,6 +162,19 @@ body {
     text-align: center;
 }
 
+.botao_voltar {
+    background-color: black;
+    border-radius: 25px;
+    border: 1px;
+    margin-left: 55%;
+    margin-top: 26%;
+    height: 35px;
+    width: 100px;
+    font-family: monospace;
+    position: absolute;
+    color: white;
+}  
+
 .nome_cadastro {
     font-family: monospace;
     text-align: center;
