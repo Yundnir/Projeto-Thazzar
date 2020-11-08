@@ -87,7 +87,7 @@ body {
     margin-top: 30px;
 }
 
-.email_login {
+#email_login {
     font-family: monospace; 
     text-align: center;
     margin-top: 30px;
@@ -100,7 +100,7 @@ body {
     width: 200px;
 }
 
-.senha_login {
+#senha_login {
     font-family: monospace;
     text-align: center;
     margin-top: 50px;
@@ -113,7 +113,7 @@ body {
     width: 200px;
 }
 
-.botao_adentrar {
+#botao_adentrar {
     background-color: black;
     border-radius: 25px;
     border: 1px;
@@ -125,7 +125,7 @@ body {
     color: white;
 }  
 
-.botao_cadastro {
+#botao_cadastro {
     height: 30px;
     width: 120px;
     border-radius: 35px;
@@ -140,7 +140,7 @@ body {
 .rift img {
     height: 400px;
     width: 678px;
-    margin-left: 127%;
+    margin-left: 125%;
     position: absolute;
 }
 
@@ -177,7 +177,7 @@ body {
     color: white;
 }  
 
-.nome_cadastro {
+#nome_cadastro {
     font-family: monospace;
     text-align: center;
     margin-top: 100px;
@@ -190,7 +190,7 @@ body {
     width: 270px;
 }
 
-.email_cadastro {
+#email_cadastro {
     font-family: monospace;
     text-align: center;
     margin-top: 38px;
@@ -203,7 +203,7 @@ body {
     width: 270px;
 }
 
-.senha_cadastro {
+#senha_cadastro {
     font-family: monospace;
     text-align: center;
     margin-top: 40px;
@@ -216,7 +216,7 @@ body {
     width: 270px;
 }
 
-.confirmar_cadastro {
+#confirmar_cadastro {
     height: 35px;
     width: 175px;
     border-radius: 35px;

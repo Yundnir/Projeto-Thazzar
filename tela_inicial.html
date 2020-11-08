@@ -111,9 +111,7 @@ ________________________________________________________________________________
 
 </head>
 
-<body>               
-
-  <embed src="musicas/torre_tempo.mp3" hidden="true" loop="infinite" autostart="TRUE">
+<body>
 
   <div class="plano_fundo">
 
@@ -132,6 +130,9 @@ ________________________________________________________________________________
   </div>
 
   <br>
+
+  <!-- <embed src="musicas/torre_tempo.mp3" hidden="true" loop="infinite" autostart="TRUE"> -->
+
 
   <div class="textos_iniciais">
     <p class="texto1"> Thazzar é um planeta que foi deixado pelos humanos, mas não foi abandonado completamente.
@@ -178,13 +179,13 @@ ________________________________________________________________________________
 
       <h1 class="titulo_login"> Entre com a sua conta cadastrada </h1>
 
-        <input type="text" class="email_login" placeholder="Insira aqui o seu EMAIL...">
+        <input type="text" id="email_login" placeholder="Insira aqui o seu EMAIL...">
         <br>
-        <input type="password" class="senha_login" placeholder="Insira aqui a sua SENHA...">
+        <input type="password" id="senha_login" placeholder="Insira aqui a sua SENHA...">
         <br>
-        <button onclick="adentrar()" class="botao_adentrar"> Adentre! </button>
+        <button onclick="adentrar()" id="botao_adentrar"> Adentre! </button>
 
-        <button onclick="entrar_cadastro()" class="botao_cadastro"> Cadastre-se </button>
+        <button onclick="entrar_cadastro()" id="botao_cadastro"> Cadastre-se </button>
 
     </div>
     <!-- Fim do Login -->
@@ -202,13 +203,13 @@ ________________________________________________________________________________
         <img src="img/riften.jpg" alt="Catedral">
       </div>
 
-        <input type="text" class="nome_cadastro" placeholder="Insira o seu Nome Completo">
+        <input type="text" id="nome_cadastro" placeholder="Insira o seu Nome Completo">
 
-        <input type="text" class="email_cadastro" placeholder="Insira um Email VÁLIDO">
+        <input type="text" id="email_cadastro" placeholder="Insira um Email VÁLIDO">
 
-        <input type="password" class="senha_cadastro" placeholder="Insira uma Senha de Acesso">
+        <input type="password" id="senha_cadastro" placeholder="Insira uma Senha de Acesso">
         <br>
-        <button onclick="cadastrar()" class="confirmar_cadastro"> Confirmar Cadastro </button>
+        <button onclick="cadastrar()" id="confirmar_cadastro"> Confirmar Cadastro </button>
 
 
 
@@ -255,5 +256,15 @@ ________________________________________________________________________________
   function voltar() {
     tela_cadastro.style.display = "none";
     tela_login.style.display = "block";
+  }
+
+  function cadastrar() {
+    if (nome_cadastro.value == "" || email_cadastro.value == "" || senha_cadastro.value == "") {
+      alert (`Um dos campos não está preenchido corretamente. Tente novamente!`);
+    } else {
+      alert (`Seu cadastro foi aceito! Entre com sua conta recém criada!`);
+      tela_cadastro.style.display = "none";
+      tela_login.style.display = "block";
+    }
   }
 </script>
