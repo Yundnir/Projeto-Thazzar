@@ -254,17 +254,37 @@ ________________________________________________________________________________
   }
 
   function voltar() {
+    nome_cadastro.value = "";
+    email_cadastro.value = "";
+    senha_cadastro.value = "";
     tela_cadastro.style.display = "none";
     tela_login.style.display = "block";
   }
+
+  var email = email_cadastro.value;
+  var senha = senha_cadastro.value;
+  var nome = nome_cadastro.value;
 
   function cadastrar() {
     if (nome_cadastro.value == "" || email_cadastro.value == "" || senha_cadastro.value == "") {
       alert (`Um dos campos não está preenchido corretamente. Tente novamente!`);
     } else {
       alert (`Seu cadastro foi aceito! Entre com sua conta recém criada!`);
+      nome_cadastro.value = "";
+      email_cadastro.value = "";
+      senha_cadastro.value = "";
       tela_cadastro.style.display = "none";
       tela_login.style.display = "block";
     }
   }
+
+    function adentrar() {
+      if (email_login.value == email || senha_login.value == senha) {
+        alert (`Olá, ${nome_cadastro.value}. Você tem acesso a história de Thazzar!`);
+        email_login.value = "";
+        senha_login.value = "";
+      } else {
+        alert (`Um dos campos não foi preenchido corretamente. Tente novamente!`);
+      }
+    }
 </script>
