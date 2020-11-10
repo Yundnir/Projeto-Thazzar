@@ -220,6 +220,7 @@ body {
     height: 35px;
     width: 175px;
     border-radius: 35px;
+    border: 1px;
     background-color: rgb(2, 78, 49);
     color: aliceblue;
     font-family: monospace;

@@ -225,7 +225,7 @@ ________________________________________________________________________________
     Redes Sociais
     botão "Volte ao topo"
     preencher com um conteúdo enriquecedor e interessante
-    Colocar o nome da minha equipe (Triad Team)
+    Colocar o nome da minha equipe (Triad Team ©)
    -->
    <footer class="tracejado">
      <!-- Literalmente só o tracejado em cima do footer -->
@@ -251,6 +251,8 @@ ________________________________________________________________________________
   function entrar_cadastro() {
     tela_login.style.display = "none";
     tela_cadastro.style.display = "block";
+    email_login.value = "";
+    senha_login.value = "";
   }
 
   function voltar() {
@@ -261,9 +263,9 @@ ________________________________________________________________________________
     tela_login.style.display = "block";
   }
 
-  var email = email_cadastro.value;
-  var senha = senha_cadastro.value;
-  var nome = nome_cadastro.value;
+  // var email = email_cadastro.value;
+  // var senha = senha_cadastro.value;
+  // var nome = nome_cadastro.value;
 
   function cadastrar() {
     if (nome_cadastro.value == "" || email_cadastro.value == "" || senha_cadastro.value == "") {
@@ -279,10 +281,11 @@ ________________________________________________________________________________
   }
 
     function adentrar() {
-      if (email_login.value == email || senha_login.value == senha) {
-        alert (`Olá, ${nome_cadastro.value}. Você tem acesso a história de Thazzar!`);
+      if (email_login.value == "nick.beatthat@hotmail.com" && senha_login.value == "Yundnir") {
+        alert (`Olá, Nicolas Carvalho. Você tem acesso a história de Thazzar!`);
         email_login.value = "";
         senha_login.value = "";
+        location.href = 'menu_logado.html';
       } else {
         alert (`Um dos campos não foi preenchido corretamente. Tente novamente!`);
       }
