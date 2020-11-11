@@ -113,21 +113,13 @@ ________________________________________________________________________________
 
 <body>
 
-  <div class="plano_fundo">
-
     <div class="titulos">
 
-      <p class="um" class="rellax" data-rellax-speed="-5"> Conheça </p>
+      <p class="um rellax" data-rellax-speed="7"> Conheça </p>
 
-      <p class="dois" class="rellax" data-rellax-speed="-5"> Thazzar </p>
+      <p class="dois rellax" data-rellax-speed="3"> Thazzar </p>
 
     </div>
-
-    <div class="planeta">
-      <img src="img/thazzar3.png" alt="Thazzar">
-    </div>
-
-  </div>
 
   <br>
 
@@ -146,35 +138,32 @@ ________________________________________________________________________________
       <br>
       <br>
       estas criaturas são... absurdamente familiares.
-      <br>
-      <br>
     </p>
-
-    <br>
+  </div>
 
     <div class="cidade">
       <img src="img/fantasycity.jpg" alt="Kifflr">
     </div>
 
-    <p class="texto2"> Se você REALMENTE quiser saber mais sobre estes seres e descobrir
+    <div class="textos_iniciais2">
+      <p class="texto2"> Se você REALMENTE quiser saber mais sobre estes seres e descobrir
       <br>
       <br>
-      o porquê este planeta é tão familiar,
+        o porquê este planeta é tão familiar,
       <br>
       <br>
       entre mais a fundo na história de Thazzar acessando a sua conta.
     </p>
-
   </div>
 
-  <!-- Parte de Login e Cadastro -->
+  <!-- Início da Parte de Login e Cadastro -->
   <div class="login_cadastro">
 
     <!-- Início do Login -->
     <div id="tela_login" style="display: block">
 
       <div class="rift">
-        <img src="img/vila.jpg" alt="Catedral">
+        <img src="img/atlantis.jpg" alt="Aqua City">
       </div>
 
       <h1 class="titulo_login"> Entre com a sua conta cadastrada </h1>
@@ -184,7 +173,6 @@ ________________________________________________________________________________
         <input type="password" id="senha_login" placeholder="Insira aqui a sua SENHA...">
         <br>
         <button onclick="adentrar()" id="botao_adentrar"> Adentre! </button>
-
         <button onclick="entrar_cadastro()" id="botao_cadastro"> Cadastre-se </button>
 
     </div>
@@ -196,40 +184,34 @@ ________________________________________________________________________________
     <div id="tela_cadastro" style="display: none">
 
       <button onclick="voltar()" class="botao_volta"> Voltar </button>
-
       <h1 class="titulo_cadastro"> Crie a sua conta aqui </h1>
 
       <div class="rift_cadastro">
-        <img src="img/riften.jpg" alt="Catedral">
+        <img src="img/kifflr.jpg" alt="Catedral">
       </div>
 
         <input type="text" id="nome_cadastro" placeholder="Insira o seu Nome Completo">
-
         <input type="text" id="email_cadastro" placeholder="Insira um Email VÁLIDO">
-
         <input type="password" id="senha_cadastro" placeholder="Insira uma Senha de Acesso">
         <br>
         <button onclick="cadastrar()" id="confirmar_cadastro"> Confirmar Cadastro </button>
-
-
 
     </div>
     <!-- Fim do Cadastro -->
 
   </div>
-  <!-- Fim da Parte de Login e Cadastro -->
+    <!-- Fim da Parte de Login e Cadastro -->
   
-  <!-- 
-    Rodapé (Footer)
 
+    <!-- Rodapé (Footer)
     Redes Sociais
     botão "Volte ao topo"
     preencher com um conteúdo enriquecedor e interessante
-    Colocar o nome da minha equipe (Triad Team ©)
-   -->
-   <footer class="tracejado">
-     <!-- Literalmente só o tracejado em cima do footer -->
-   </footer>
+    Colocar o nome da minha equipe (Triad Team ©) -->
+  <div class="bloco_preto"></div>
+  <div class="tracejado"></div>
+
+  
    <footer class="embaixo">
     <p class="triad_footer">
       Triad Team ©
@@ -241,13 +223,21 @@ ________________________________________________________________________________
 
 </html>
 
-<!-- <script src="rellax.min.js"></script> -->
-
-<!-- <script>
-  var rellax = new Rellax('.rellax');
-</script> -->
+<!-- Animação -->
+<script src="rellax.min.js"></script>
 
 <script>
+  var rellax = new Rellax('.rellax');
+</script>
+
+<!-- Fim da Animação -->
+
+<script>
+    var email = email_cadastro.value;
+   var senha = senha_cadastro.value;
+  var nome = nome_cadastro.value;
+
+
   function entrar_cadastro() {
     tela_login.style.display = "none";
     tela_cadastro.style.display = "block";
@@ -262,10 +252,6 @@ ________________________________________________________________________________
     tela_cadastro.style.display = "none";
     tela_login.style.display = "block";
   }
-
-  // var email = email_cadastro.value;
-  // var senha = senha_cadastro.value;
-  // var nome = nome_cadastro.value;
 
   function cadastrar() {
     if (nome_cadastro.value == "" || email_cadastro.value == "" || senha_cadastro.value == "") {
