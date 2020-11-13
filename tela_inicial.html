@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/tela_inicial.css">
-  <link rel="stylesheet" href="javascript/tela_inicial.js">
+  <!-- <link rel="stylesheet" href="javascript/tela_inicial.js"> -->
 
   <title> Thazzar - HomePage </title>
   <!-- ABRA AQUI ANTES DE LER A HISTÓRIA
@@ -100,8 +100,6 @@ ________________________________________________________________________________
  -->
 
   <!-- Próximas etapas: 
-
-      Arrumar o javascript do login/cadastro;
      
       Fazer o esquema de parallax e rellax na página inicial (TESTAR);
 
@@ -117,13 +115,13 @@ ________________________________________________________________________________
 
       <p class="um rellax" data-rellax-speed="7"> Conheça </p>
 
-      <p class="dois rellax" data-rellax-speed="3"> Thazzar </p>
+      <p class="dois rellax" data-rellax-speed="1"> Thazzar </p>
 
     </div>
 
   <br>
 
-  <!-- <embed src="musicas/torre_tempo.mp3" hidden="true" loop="infinite" autostart="TRUE"> -->
+  <embed src="musicas/o_despertar.mp3" hidden="true" loop="infinite" autostart="TRUE">
 
 
   <div class="textos_iniciais">
@@ -134,7 +132,9 @@ ________________________________________________________________________________
       Existem, agora, seres grandiosos e exóticos que vivem no planeta de suas próprias formas,
       <br>
       <br>
+      <br>
       e não se sabe ao certo como isso ocorreu ou quando ocorreu, apenas que
+      <br>
       <br>
       <br>
       estas criaturas são... absurdamente familiares.
@@ -149,7 +149,9 @@ ________________________________________________________________________________
       <p class="texto2"> Se você REALMENTE quiser saber mais sobre estes seres e descobrir
       <br>
       <br>
+      <br>
         o porquê este planeta é tão familiar,
+      <br>
       <br>
       <br>
       entre mais a fundo na história de Thazzar acessando a sua conta.
@@ -181,13 +183,13 @@ ________________________________________________________________________________
 
 
     <!-- Início do Cadastro -->
-    <div id="tela_cadastro" style="display: none">
+    <div id="tela_cadastro">
 
       <button onclick="voltar()" class="botao_volta"> Voltar </button>
       <h1 class="titulo_cadastro"> Crie a sua conta aqui </h1>
 
       <div class="rift_cadastro">
-        <img src="img/kifflr.jpg" alt="Catedral">
+        <img src="img/kifflr.jpg" id="Kifflr">
       </div>
 
         <input type="text" id="nome_cadastro" placeholder="Insira o seu Nome Completo">
@@ -214,7 +216,7 @@ ________________________________________________________________________________
   
    <footer class="embaixo">
     <p class="triad_footer">
-      Triad Team ©
+      Direitos e Copyright reservados pela Triad Team ©
     </p>
 
   </footer>
@@ -268,7 +270,8 @@ ________________________________________________________________________________
 
     function adentrar() {
       if (email_login.value == "nick.beatthat@hotmail.com" && senha_login.value == "Yundnir") {
-        alert (`Olá, Nicolas Carvalho. Você tem acesso a história de Thazzar!`);
+        alert (`Olá, Nicolas Carvalho. E Boas-Vindas`);
+        alert (`Agora, você tem acesso a história de Thazzar!`);
         email_login.value = "";
         senha_login.value = "";
         location.href = 'menu_logado.html';
