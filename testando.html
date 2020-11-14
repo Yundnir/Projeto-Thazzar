@@ -1,56 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="testando.css">
-    <link rel="stylesheet" href="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Teste de Animação </title>
+  <link rel="stylesheet" href="testando.css">
 </head>
+
+<!-- Animação de Lado (aparição de algo da direita para a esquerda -->
+
 <body>
-    <div class="container">
-        <div class="message signup">
-          <div class="btn-wrapper">
-            <button class="button" id="signup">Sign Up</button>
-            <button class="button" id="login"> Login</button>
-          </div>
-        </div>
-        <div class="form form--signup">
-          <div class="form--heading">Welcome! Sign Up</div>
-          <form autocomplete="off">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <button class="button">Sign Up</button>
-          </form>
-        </div>
-        <div class="form form--login">
-          <div class="form--heading">Welcome back! </div>
-          <form autocomplete="off">
-            <input type="text" placeholder="Name">
-            <input type="password" placeholder="Password">
-            <button class="button">Login</button>
-          </form>
-        </div>
-      </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<div class="aqua dismiss">
+</div>
+
+<a id="botao_cadastro"> Cadastre-se </a>
+<a id="botao_volta"> Voltar </a>
 </body>
 </html>
 
 <script>
-    $("#signup").click(function() {
-    $(".message").css("transform", "translateX(100%)");
-    if ($(".message").hasClass("login")) {
-      $(".message").removeClass("login");
-    }
-    $(".message").addClass("signup");
-  });
-  
-  $("#login").click(function() {
-    $(".message").css("transform", "translateX(0)");
-    if ($(".message").hasClass("login")) {
-      $(".message").removeClass("signup");
-    }
-    $(".message").addClass("login");
-  });
-  
+  $ ('#botao_cadastro').click (function (event) {
+  if ($ ('.aqua').hasClass ('dismiss') ) {
+    $ ('.aqua').removeClass ('dismiss').addClass ('selected').show();
+  }
+  event.preventDefault();
+}
+);
+
+$ ('#botao_volta').click (function (event) {
+  if ($ ('.aqua').hasClass ('selected') ) {
+    $ ('.aqua').removeClass ('selected').addClass ('dismiss');
+  }
+  event.preventDefault();
+}
+);
 </script>

@@ -162,10 +162,10 @@ ________________________________________________________________________________
   <div class="login_cadastro">
 
     <!-- Início do Login -->
-    <div id="tela_login" style="display: block">
+    <div id="tela_login">
 
-      <div class="rift">
-        <img src="img/atlantis.jpg" alt="Aqua City">
+      <div class="aqua dismiss">
+        <img src="img/atlantis.jpg" id="aqua_city">
       </div>
 
       <h1 class="titulo_login"> Entre com a sua conta cadastrada </h1>
@@ -185,11 +185,11 @@ ________________________________________________________________________________
     <!-- Início do Cadastro -->
     <div id="tela_cadastro">
 
-      <button onclick="voltar()" class="botao_volta"> Voltar </button>
+      <button onclick="voltar()" id="botao_volta"> Voltar </button>
       <h1 class="titulo_cadastro"> Crie a sua conta aqui </h1>
 
-      <div class="rift_cadastro">
-        <img src="img/kifflr.jpg" id="Kifflr">
+      <div class="kifflr_cadastro">
+        <img src="img/kifflr.jpg" id="kifflr">
       </div>
 
         <input type="text" id="nome_cadastro" placeholder="Insira o seu Nome Completo">
@@ -226,11 +226,12 @@ ________________________________________________________________________________
 </html>
 
 <!-- Animação -->
-<script src="rellax.min.js"></script>
+
+<!-- <script src="rellax.min.js"></script>
 
 <script>
   var rellax = new Rellax('.rellax');
-</script>
+</script> -->
 
 <!-- Fim da Animação -->
 
@@ -245,6 +246,11 @@ ________________________________________________________________________________
     tela_cadastro.style.display = "block";
     email_login.value = "";
     senha_login.value = "";
+
+    if ($ ('.aqua').hasClass ('dismiss') ) {
+    $ ('.aqua').removeClass ('dismiss').addClass ('selected').show();
+    }
+  event.preventDefault();
   }
 
   function voltar() {
@@ -270,7 +276,7 @@ ________________________________________________________________________________
 
     function adentrar() {
       if (email_login.value == "nick.beatthat@hotmail.com" && senha_login.value == "Yundnir") {
-        alert (`Olá, Nicolas Carvalho. E Boas-Vindas`);
+        alert (`Olá, Nicolas Carvalho. E Boas-Vindas.`);
         alert (`Agora, você tem acesso a história de Thazzar!`);
         email_login.value = "";
         senha_login.value = "";
