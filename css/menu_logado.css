@@ -3,21 +3,32 @@
 
 body {
     font-family: monospace;
+    background-color: black;
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
      /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-     background-color: grey;
-     /* background-image: url(../img/); */
      color: white;
      margin: 0;
      padding: 0;
 }
 
+.wallpaper img {
+    width: 100%;
+}
+
+.titulo {
+    position: absolute;
+    margin-top: -50%;
+    font-size: 40px;
+    margin-left: 28%;
+}
+
 .header {
-    background-color: black;
-    /* height: 10%; */
+    background-color: rgba(39, 97, 145, 0.479);
     margin: -1;
     width: 100%;
-    height: 15vh;
+    height: 13vh;
+    margin-top: -57%;
+    position: absolute;
 }
 
 .titulo_header span {
@@ -26,10 +37,36 @@ body {
     font-size: 1.5rem;
 }
 
+.navegacao_header {
+    float: right;
+    padding: 12px;
+    font-size: 20px;
+}
+
 .navegacao_header ul, li, a {
     display: inline-block;
     text-decoration: none;
     list-style-type: none;
     color: white;
+    padding: 0 10px 0 15px;
 }
 
+.conteudo_site {
+    background-color: white;
+    border: black 3px solid;
+    border-radius: 7px;
+    height: 60vh;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.conteudo_site .paragrafo_historico1 {
+    background-color: grey;
+    height: 80%;
+    width: 93%;
+    border: black 5px solid;
+    border-radius: 10px;
+    margin-left: 3%;
+    margin-top: 1%;
+}
