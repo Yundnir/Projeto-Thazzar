@@ -51,22 +51,61 @@ body {
     padding: 0 10px 0 15px;
 }
 
-.conteudo_site {
+
+
+.historias {
     background-color: white;
     border: black 3px solid;
     border-radius: 7px;
-    height: 60vh;
-    width: 80%;
-    margin-left: 10%;
+    height: 160vh;
+    width: 90%;
+    margin-left: 5%;
     margin-top: 5%;
 }
 
-.conteudo_site .paragrafo_historico1 {
+.historias .paragrafo_historico1 {
     background-color: grey;
     height: 80%;
     width: 93%;
-    border: black 5px solid;
+    border: black 4px solid;
     border-radius: 10px;
     margin-left: 3%;
     margin-top: 1%;
+}
+
+.titulo_yundnir h1 {
+    color: black;
+    margin-left: 40%;
+}
+
+.cartao_yundnir {
+    background-color: rgb(255, 255, 155);
+    border: black 4px solid;
+    height: 550px;
+    width: 23%;
+    margin-left: 2%;
+}
+
+.image1 img {
+    height: 330px;
+    width: 93%;
+    margin-left: 2%;
+    margin-top: 2%;
+    border: black 3px solid;
+    border-radius: 5px
+}
+
+.descricao_yundnir {
+    color: black;
+    font-size: 17px;
+    text-align: center;
+}
+
+.texto_yundnir {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: -20%;
+    text-align: center;
 }
