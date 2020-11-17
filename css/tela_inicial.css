@@ -40,7 +40,7 @@ body {
 .dois {
     text-align: center;
     position: absolute;
-    margin-top: 43%;
+    margin-top: 40%;
     margin-left: 43%;
     font-size: 50px;
 }
@@ -157,14 +157,14 @@ body {
 
 .aqua img {
     height: 400px;
-    width: 673px;
-    margin-left: 128%;
+    width: 677px;
+    margin-left: 125%;
     position: absolute;
 }
 
 /* Início da Animação de Transição do Login para Cadastro */
 
-html,
+/* html,
 body {
   max-width: 100%
 }
@@ -224,7 +224,7 @@ body {
   to {
     -webkit-transform: translateX(100%);
   }
-}
+} */
 
    /* ------------------- TESTE ------------------------- */
   /* Fim da Animação de Transição do Login para Cadastro */
