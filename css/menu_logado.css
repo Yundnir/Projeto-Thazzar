@@ -15,12 +15,12 @@ body {
     width: 100%;
 }
 
-.titulo {
+/* .titulo {
     position: absolute;
     margin-top: -50%;
     font-size: 40px;
     margin-left: 28%;
-}
+} */
 
 .header {
     background-color: rgba(39, 97, 145, 0.479);
@@ -64,7 +64,7 @@ body {
 }
 
 .historias .paragrafo_historico1 {
-    background-color: grey;
+    background-color: rgb(24, 24, 24);
     height: 80%;
     width: 93%;
     border: black 4px solid;
@@ -74,7 +74,7 @@ body {
 }
 
 .titulo_yundnir h1 {
-    color: black;
+    /* color: black; */
     margin-left: 40%;
 }
 
@@ -102,10 +102,16 @@ body {
 }
 
 .texto_yundnir {
-    color: black;
-    font-size: 20px;
+    /* color: black; */
+    font-size: 14px;
     position: absolute;
+<<<<<<< HEAD
     margin-left: 25%;
     margin-top: -38%;
     text-align: center;
+=======
+    margin-left: 24%;
+    margin-top: -40%;
+    /* text-align: center; */
+>>>>>>> ce5e44d80904a2497d36a1b67d59d235c9e02314
 }
