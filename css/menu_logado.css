@@ -70,7 +70,7 @@ body {
     border: black 4px solid;
     border-radius: 10px;
     margin-left: 3%;
-    margin-top: 1%;
+    margin-top: 3%;
 }
 
 .titulo_yundnir h1 {
@@ -105,13 +105,9 @@ body {
     /* color: black; */
     font-size: 14px;
     position: absolute;
-<<<<<<< HEAD
     margin-left: 25%;
     margin-top: -38%;
-    text-align: center;
-=======
     margin-left: 24%;
     margin-top: -40%;
     /* text-align: center; */
->>>>>>> ce5e44d80904a2497d36a1b67d59d235c9e02314
 }
