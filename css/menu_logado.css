@@ -78,7 +78,13 @@ body {
 }
 
 .historias .historico_oculto1 {
-    
+    background-color: rgb(24, 24, 24);
+    height: 13%;
+    width: 93%;
+    border: black 4px solid;
+    border-radius: 10px;
+    margin-left: 3%;
+    margin-top: 3%;
 }
 
 .titulo_yundnir h1 {
