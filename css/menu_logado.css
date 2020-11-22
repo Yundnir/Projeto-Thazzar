@@ -15,12 +15,9 @@ body {
     width: 100%;
 }
 
-/* .titulo {
-    position: absolute;
-    margin-top: -50%;
-    font-size: 40px;
-    margin-left: 28%;
-} */
+
+/* Início do HEADER */
+
 
 .header {
     background-color: rgba(102, 186, 255, 0.212);
@@ -51,24 +48,40 @@ body {
     padding: 0 10px 0 15px;
 }
 
+
+/* Fim do HEADER */
+
+
+
+/* Início da Descrição de Personagens */
+
+
 .seta img {
     height: 40px;
-    margin-left: 52%;
-    
+    margin-top: 5%;
+    margin-left: 210%;
 }
+
+.cumprimentos {
+    font-size: 50px;
+    position: absolute;
+    margin-top: -48%;
+    margin-left: 29%;
+}
+
 
 .historias {
     background-color: white;
     border: black 3px solid;
     border-radius: 7px;
-    height: 160vh;
+    height: 125vh;
     width: 90%;
     margin-left: 5%;
     margin-top: 5%;
 }
 
-.historias .paragrafo_historico1 {
-    background-color: rgb(24, 24, 24);
+.historias .paragrafo_historico {
+    background-color: rgb(59, 59, 59);
     height: 80%;
     width: 93%;
     border: black 4px solid;
@@ -77,8 +90,8 @@ body {
     margin-top: 3%;
 }
 
-.historias .historico_oculto1 {
-    background-color: rgb(24, 24, 24);
+.historias .historico_oculto {
+    background-color: rgb(59, 59, 59);
     height: 13%;
     width: 93%;
     border: black 4px solid;
@@ -88,8 +101,8 @@ body {
 }
 
 .titulo_yundnir h1 {
-    /* color: black; */
     margin-left: 40%;
+    font-size: 30px;
 }
 
 .cartao_yundnir {
@@ -116,12 +129,11 @@ body {
 }
 
 .texto_yundnir {
-    /* color: black; */
-    font-size: 14px;
+    font-size: 20px;
     position: absolute;
     margin-left: 25%;
     margin-top: -38%;
-    margin-left: 24%;
-    margin-top: -40%;
-    /* text-align: center; */
 }
+
+
+/* Fim da Descrição de Personagens */

@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="css/menu_logado.css">
     <link rel="stylesheet" href="tela_inicial.html">
 </head>
+
+<!-- 
+    Anotações:
+
+        Consertar a seta branca apontada para a direita 
+        (DEVE ESTAR APONTADA PARA BAIXO);
+
+        Criar uma div sobre o paragrafo_historico1,
+        para fazer uma caixa que fará uma aparição mais longa
+        e mostrar o conteúdo por dentro;
+
+        Pensar em um jeito de começar/organizar o javascript;
+-->
+
 <body>
 
     <div class="wallpaper">
@@ -60,42 +74,27 @@
 <!-- Início do aúdio 1 -->
 
 <div class="conteudo_site1">
-    <span class="cumprimentos">
-        Olá, Nicolas Carvalho.
-    </span>
+    <span class="cumprimentos"> Olá, <a> Nicolas Carvalho. </a> </span>
 </div>
 
     <div class="historias">
-        <div class="historico_oculto1">
+        
+        <div class="historico_oculto" style="display: none">
             <div class="titulo_yundnir">
                 <h1> Yün'dnir, o Licântropo. </h1>
             </div>
 
+            <!-- Seta pra arrumar -->
             <div class="seta">
-                <img src="img/arrow2.jpg" alt="Seta pra baixo">
+                <img src="img/seta_baixo.png" alt="Seta pra baixo" onclick="abrir_descricao()">
             </div>
         </div>
-        <div class="paragrafo_historico1" style="display: none">
-            <!-- 
-                Anotações:
 
-                Consertar a seta branca apontada para a direita 
-                (DEVE ESTAR APONTADA PARA BAIXO);
-
-                Criar uma div sobre o paragrafo_historico1,
-                para fazer uma caixa que fará uma aparição mais longa
-                e mostrar o conteúdo por dentro;
-
-                Pensar em um jeito de começar/organizar o javascript;
-
-             -->
+        <!-- Descrição que substituirá o historico_oculto1 -->
+        <div class="paragrafo_historico" style="display: block">
 
             <div class="titulo_yundnir">
                 <h1> Yün'dnir, o Licântropo. </h1>
-            </div>
-
-            <div class="seta">
-                <img src="img/arrow2.jpg" alt="Seta pra baixo">
             </div>
 
             <div class="cartao_yundnir">
@@ -124,35 +123,49 @@
                         <b> Cargo: </b> Mercenário 
                     </p>
             </div>
-            <!-- Fim da Descrição sobre Yün'dnir -->
-        </div>
+
             <div class="texto_yundnir">
                 <span> 
-                    Há muito tempo, em uma terra distante...
+                    Yün’dnir cresceu grande e forte, sem saber do que realmente <br>
+                    aconteceu lá em Kifflr, pois nem sua tia havia contado a verdade 
+                    <br> 
+                    para ele até então. Nos seus 21 anos, a vida de Yün’dnir foi se 
                     <br>
-                    EU: Abu, O Grande Mestre das Trevas,
-                    <br>
-                    liberei as TERRÍVEIS Forças do Mal!
-                    <br>
-                    <br>
-                    Mas um simplório guerreiro samurai,
-                    <br>
-                    empunhando uma espada mágica,
-                    <br>
-                    opou-se à MIM!
-                    <br>
-                    <br>
-                    Antes do combate final, eu abri um portal no tempo,
-                    <br>
-                    e o lancei no futuro, onde o mal é REI.
-                    <br>
-                    Agora, o TOLO busca retornar ao passado...
+                    tornando mais densa, tanto que o fez entrar para uma vida mais 
+                    <br> 
+                    sombria nas ruas, fazia alguns trabalhos mercenarios para 
+                    <br> 
+                    se sustentar, suas habilidades eram raras naquele preço 
+                    <br> 
+                    e então ele aproveitava “o mercado de trabalho”. 
                     <br>
                     <br>
-                    E destruir o futuro... que é ABU!
+                    <br>
+                    A criança tão animada e com sonho de ser um guerreiro tão 
+                    <br> 
+                    forte quanto Khanneigg se tornou, naquele período, um mercenario 
+                    <br>
+                    furtivo e sujo, aonde se meter em confusão se tornou rotina 
+                    <br> 
+                    e os perigos da cidade de Byavarn se tornaram 
+                    <br> 
+                    suas diversões pessoais.
                 </span>
             </div>
+
+            <div class="seta">
+                <img src="img/seta_cima.png" alt="Seta pra baixo">
+            </div>
+            <!-- Fim da Descrição sobre Yün'dnir -->
+            </div>
+        
         </div>
     </div>
 </body>
 </html>
+
+<script>
+    function abrir_descricao() {
+        
+    }
+</script>
