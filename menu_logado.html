@@ -62,8 +62,17 @@
     <img src="img/perfil.png" alt="Perfil">
 </div>
 
+<div class="texto_introducao">
+    <span>
+        Logo abaixo, você poderá acessar 
+        <br>
+        <br>
+        a história destes personagens enigmáticos
+    </span>
+</div>
+
 <!-- Trecho das Histórias dos Personagens -->
-<div class="historias">
+<div class="historias" id="area_historias">
         
 <!-- Início da Descrição sobre Yün'dnir -->
 
@@ -243,6 +252,34 @@
 </div>
 <!-- Fim do Trecho das Histórias dos Personagens -->
 
+<div class="texto_introducao2">
+    <span>
+        Esse projeto começou “do nada”, como uma idéia que 
+        <br>
+        <br>
+        surgiu a partir de um suspiro de um sonho
+    </span>
+</div>
+
+<div class="fundo_equipe">
+    <div class="fundo_cinza">
+
+    </div>
+</div>
+
+<div class="texto_final">
+    <span>
+        Obrigado por acessar nosso site! :D
+    </span>
+</div>
+
+<div class="tracejado"></div>
+<footer class="embaixo">
+    <p class="triad_footer">
+        Direitos e Copyright reservados pela Triad Team ©
+    </p>
+</footer>
+    
 </body>
 </html>
 
@@ -250,21 +287,36 @@
     function abrir_descricao1() {
         oculto_1.style.display = `none`;
         aberto_1.style.display = `block`;
+        area_historias.style.height = `145vh`;
+        aberto_1.style.height = `100vh`;
+
     }
 
     function voltar_descricao1() {
         oculto_1.style.display = `block`;
         aberto_1.style.display = `none`;
+        area_historias.style.height = `63vh`;
+        aberto_1.style.height = `20vh`;
     }
 
 
     function abrir_descricao2() {
         oculto_2.style.display = `none`;
         aberto_2.style.display = `block`;
+        area_historias.style.height = `140vh`;
+        aberto_2.style.height = `100vh`;
+
     }
 
     function voltar_descricao2() {
         oculto_2.style.display = `block`;
         aberto_2.style.display = `none`;
+        area_historias.style.height = `63vh`;
+
+        while (aberto_1.style.height == `100vh` && aberto_2.style.height == `100vp`) {
+        area_historias.style.height = `220vh`;
+        }
     }
+
+
 </script>
