@@ -17,37 +17,33 @@
 
 <body>
 
+    <!-- Voltar para a Tela de Início -->
+    <div class="seta_home">
+        <a href="tela_inicial.html"> <img src="img/seta_esquerda.png" alt="Voltar para a Home"> </a>
+        <span>
+            Home
+        </span>
+    </div>
+
+    <!-- Ir para os Personagens -->
+    <div class="seta_personagens">
+        <span>
+            Personagens
+        </span>
+        <a> <img src="img/seta_baixo.png" alt="Ir para os Personagens"> </a>
+    </div>
+
+    <!-- Ir para a Equipe -->
+    <div class="seta_equipe">
+        <span>
+            Equipe
+        </span>
+        <a> <img src="img/seta_baixo.png" alt="Ir para a Equipe"> </a>
+    </div>
+
     <div class="wallpaper">
         <img src="img/Thazzar1.png" alt="Planeta">
     </div>
-
-    <!-- Início do Header -->
-    <!-- <div class="header">
-        <div class="conteudo_header">
-
-            <div class="navegacao_header">
-                <ul>
-                    <li>
-                        <a href="tela_inicial.html"> Home </a>
-                    </li>
-                    
-                    <li>
-                        <a href="sobre.html"> Os Personagens </a>
-                    </li>
-
-                    <li>
-                        <a href="servicos.html"> Sobre a Equipe </a>
-                    </li>
-
-                    <li>
-                        <a href="servicos.html"> Perfil </a>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-    </div> -->
-    <!-- Fim do Header -->
 
 
 <!-- Início do aúdio 1 -->
@@ -60,25 +56,31 @@
     </div> -->
 <!-- Fim do aúdio 1 -->
 
+
 <div class="conteudo_site1">
     <span class="cumprimentos"> Olá, <a> Nicolas Carvalho. </a> </span>
+    <img src="img/perfil.png" alt="Perfil">
 </div>
 
-    <div class="historias">
+<!-- Trecho das Histórias dos Personagens -->
+<div class="historias">
         
-        <div class="historico_oculto" style="display: none">
+<!-- Início da Descrição sobre Yün'dnir -->
+
+<!-- Parte Oculta -->
+        <div class="yundnir_oculto" style="display: block" id="oculto_1">
             <div class="titulo_yundnir">
                 <h1> Yün'dnir, o Licântropo. </h1>
             </div>
 
-            <!-- Seta pra arrumar -->
-            <div class="seta">
-                <img src="img/seta_baixo.png" alt="Seta pra baixo" onclick="abrir_descricao()">
+            <div class="seta_oculta1">
+                <img src="img/seta_baixo.png" alt="Seta pra baixo" onclick="abrir_descricao1()">
             </div>
         </div>
+<!-- Fim da Parte Oculta -->
 
-        <!-- Descrição que substituirá o historico_oculto1 -->
-        <div class="paragrafo_historico" style="display: block">
+<!-- Começo da Descrição sobre Yün'dnir -->
+        <div class="yundnir_aberto" style="display: none" id="aberto_1">
 
             <div class="titulo_yundnir">
                 <h1> Yün'dnir, o Licântropo. </h1>
@@ -89,7 +91,6 @@
                     <img src="img/yundnir.png" alt="Yundnir">
                 </div>
                 
-                <!-- Início da Descrição sobre Yün'dnir -->
                 <div class="descricao_yundnir">
                     <p> 
                         <b> Espécie: </b> Canídeo 
@@ -109,10 +110,10 @@
                     <p> 
                         <b> Cargo: </b> Mercenário 
                     </p>
-            </div>
+                </div>
 
-            <div class="texto_yundnir">
-                <span> 
+                <div class="texto_yundnir">
+                    <span> 
                     Yün’dnir cresceu grande e forte, sem saber do que realmente <br>
                     aconteceu lá em Kifflr, pois nem sua tia havia contado a verdade 
                     <br> 
@@ -137,22 +138,133 @@
                     e os perigos da cidade de Byavarn se tornaram 
                     <br> 
                     suas diversões pessoais.
-                </span>
+                    </span>
+                </div>
+
+                <div class="seta_aberta1">
+                    <img src="img/seta_cima.png" alt="Seta pra baixo" onclick="voltar_descricao1()">
+                </div>
+
             </div>
 
-            <div class="seta">
-                <img src="img/seta_cima.png" alt="Seta pra baixo">
-            </div>
-            <!-- Fim da Descrição sobre Yün'dnir -->
-            </div>
-        
         </div>
+
+<!-- Fim da Descrição sobre Yün'dnir -->
+
+
+
+<!-- Início da Descrição sobre Khanneigg -->
+
+<!-- Parte Oculta -->
+<div class="khanneigg_oculto" style="display: block" id="oculto_2">
+    <div class="titulo_khanneigg">
+        <h1> Khanneigg, O Primordial Canídeo. </h1>
     </div>
+
+    <div class="seta_oculta2">
+        <img src="img/seta_baixo.png" alt="Seta pra baixo" onclick="abrir_descricao2()">
+    </div>
+</div>
+<!-- Fim da Parte Oculta -->
+
+
+<!-- Começo da Descrição sobre Khanneigg -->
+<div class="khanneigg_aberto" style="display: none" id="aberto_2">
+
+    <div class="titulo_khanneigg">
+        <h1> Khanneigg, o Primordial Canídeo. </h1>
+    </div>
+
+    <div class="cartao_khanneigg">
+        <div class="image2">
+            <img src="img/khanneigg.png" alt="khanneigg">
+        </div>
+        
+        <div class="descricao_khanneigg">
+            <p> 
+                <b> Espécie: </b> Canídeo 
+            </p>
+
+            <p> 
+                <b> Gênero: </b> Masculino 
+            </p>
+
+            <p> 
+                <b> Personalidade: </b> Egocêntrico 
+            </p>
+            
+            <p> 
+                <b> Classe: </b> Divino 
+            </p>
+            <p> 
+                <b> Cargo: </b> Deus-Rei Canídeo 
+            </p>
+        </div>
+
+        <div class="texto_khanneigg">
+            <span> 
+            Yün’dnir cresceu grande e forte, sem saber do que realmente <br>
+            aconteceu lá em Kifflr, pois nem sua tia havia contado a verdade 
+            <br> 
+            para ele até então. Nos seus 21 anos, a vida de Yün’dnir foi se 
+            <br>
+            tornando mais densa, tanto que o fez entrar para uma vida mais 
+            <br> 
+            sombria nas ruas, fazia alguns trabalhos mercenarios para 
+            <br> 
+            se sustentar, suas habilidades eram raras naquele preço 
+            <br> 
+            e então ele aproveitava “o mercado de trabalho”. 
+            <br>
+            <br>
+            <br>
+            A criança tão animada e com sonho de ser um guerreiro tão 
+            <br> 
+            forte quanto Khanneigg se tornou, naquele período, um mercenario 
+            <br>
+            furtivo e sujo, aonde se meter em confusão se tornou rotina 
+            <br> 
+            e os perigos da cidade de Byavarn se tornaram 
+            <br> 
+            suas diversões pessoais.
+            </span>
+        </div>
+
+        <div class="seta_aberta2">
+            <img src="img/seta_cima.png" alt="Seta pra baixo" onclick="voltar_descricao2()">
+        </div>
+
+    </div>
+
+</div>
+<!-- Fim da Descrição sobre Khanneigg -->
+
+
+</div>
+<!-- Fim do Trecho das Histórias dos Personagens -->
+
 </body>
 </html>
 
 <script>
-    function abrir_descricao() {
-        
+    function abrir_descricao1() {
+        oculto_1.style.display = `none`;
+        aberto_1.style.display = `block`;
+    }
+
+    function voltar_descricao1() {
+        oculto_1.style.display = `block`;
+        aberto_1.style.display = `none`;
+    }
+
+
+    function abrir_descricao2() {
+        oculto_2.style.display = `none`;
+        aberto_2.style.display = `block`;
+    }
+
+    function voltar_descricao2() {
+        oculto_2.style.display = `block`;
+        aberto_2.style.display = `none`;
     }
 </script>
