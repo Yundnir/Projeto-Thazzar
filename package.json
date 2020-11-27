@@ -1,18 +1,17 @@
 {
-  "name": "nikaoapi",
+  "name": "pi-ads-2020-2",
   "version": "1.0.0",
-  "description": "descrição de que?",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "\"\"\u001b[Decho\\\\\\\"\"\"\u001b[DError\u001b[D\u001b[DError.. no test specified\\\\\\\"&& exit 1\""
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "\u0016https://github.com/nicolascarvalhobandtec/Meu_Reposit-rio.git"
-  },
-  "author": "Nicolas Carvalho\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[\"Nicolas_Carvalho\"",
-  "license": "ISC",
   "dependencies": {
-    "rellax": "^1.12.1"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "sequelize": "^5.21.2",
+    "tedious": "^6.6.0"
   }
 }
