@@ -1,3 +1,5 @@
+
+
 var express = require('express');
 var router = express.Router();
 var sequelize = require('../models').sequelize;
@@ -37,21 +39,28 @@ router.post('/autenticar', function(req, res, next) {
 });
 
 /* Cadastrar usuário */
-router.post('/cadastrar', function(req, res, next) {
-	console.log('Criando um usuário');
+router.post ('/cadastrar', function(req, res, next) {
+	console.log ('Criando um usuário');
 	
-	Usuario.create({
+	Usuario.create (
+		{
 		nome : req.body.nome,
 		login : req.body.login,
 		senha: req.body.senha
-	}).then(resultado => {
+	}
+	)
+	.then (resultado => {
 		console.log(`Registro criado: ${resultado}`)
         res.send(resultado);
-    }).catch(erro => {
+	}
+	)
+	.catch (erro => {
 		console.error(erro);
 		res.status(500).send(erro.message);
-  	});
-});
+	}
+	);
+}
+);
 
 
 /* Verificação de usuário */

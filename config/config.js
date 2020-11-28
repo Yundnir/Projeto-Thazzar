@@ -2,8 +2,8 @@ module.exports = {
   production: {
     // username é o nome de usuário no MySQL Workbench;
     // 
-    username: 'root', 
-    password: 'SUA_SENHA_DO_BANCO_DE_DADOS',
+    username: 'bd_sqlThazzar', 
+    password: '#Gf51004386818',
     database: 'bdThazzar',
     host: 'URL_DO_SEU_BANCO_DE_DADOS.database.windows.net',
     dialect: 'mssql',

@@ -15,8 +15,6 @@ body {
 
 
 
-
-
 /* Elementos junto do Planeta */
 
 /* Home */
@@ -35,6 +33,7 @@ body {
     position: absolute;
 }
 
+
 /* Personagens */
 .seta_personagens img {
     height: 8vh;
@@ -50,6 +49,7 @@ body {
     position: absolute;
     font-size: 25px;
 }
+
 
 /* Equipe */
 .seta_equipe img {
@@ -248,7 +248,7 @@ body {
     font-size: 20px;
     position: absolute;
     margin-left: 25%;
-    margin-top: -38%;
+    margin-top: -40%;
 }
 
 /* Fim da Descrição de Personagens */
@@ -278,23 +278,202 @@ body {
     background-color: white;
     border: black 3px solid;
     border-radius: 7px;
-    height: 155vh;
+    height: 275vh;
     width: 90%;
     margin-left: 5%;
 }
 
 .fundo_cinza {
     background-color: rgb(59, 59, 59);
-    border: black 3px solid;
+    border: black 6px solid;
     border-radius: 7px;
-    height: 147vh;
-    width: 95.8%;
+    height: 265vh;
+    width: 95%;
     margin-top: 2%;
     margin-left: 2%;
 }
 
-/* Fim da Equipe */
 
+
+/* Texto Inicial */
+.texto1 {
+    padding-top: 6%;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 2%;
+}
+
+
+/* Início da Descrição do Arthur */
+
+.arthur {
+    background-color: black;
+    border: rgb(255, 255, 155) 6px solid;
+    border-radius: 10px;
+    height: 40vh;
+    margin-top: 4%;
+    margin-left: 5%;
+    width: 88%;
+}
+
+.arthur h1 {
+    margin-left: 5%;
+    font-style: italic;
+}
+
+.arthur h2 {
+    margin-left: 4%;
+    font-style: italic;
+}
+
+.arthur img {
+    position: absolute;
+    height: 35vh;
+    margin-top: -13.4%;
+    margin-left: 55%;
+    border-radius: 20px;
+    border: black 5px solid;
+}
+
+.arthur .text_arthur1 {
+    position: absolute;
+    font-size: 23px;
+    margin-left: 8%;
+}
+
+.arthur .text_arthur2 {
+    position: absolute;
+    font-size: 23px;
+    margin-left: 24%;
+}
+
+/* Fim da Descrição do Arthur */
+
+
+
+
+/* Texto do Meio */
+.texto2 {
+    padding-top: 7%;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/* Início da Descrição da Maria */
+
+.maria {
+    background-color: black;
+    border: rgb(255, 255, 155) 6px solid;
+    border-radius: 10px;
+    height: 40vh;
+    margin-top: 8%;
+    margin-left: 5%;
+    width: 88%;
+}
+
+.maria h1 {
+    margin-left: 32%;
+    font-style: italic;
+}
+
+.maria h2 {
+    margin-left: 31%;
+    font-style: italic;
+}
+
+.maria img {
+    position: absolute;
+    height: 35vh;
+    margin-top: 1%;
+    margin-left: 2%;
+    border-radius: 20px;
+    border: black 5px solid;
+}
+
+.maria .text_maria1 {
+    font-size: 25px;
+    margin-left: 30%;
+}
+
+.maria .text_maria2 {
+    position: absolute;
+    font-size: 25px;
+    margin-left: 41.7%;
+}
+
+/* Fim da Descrição da Maria */
+
+
+
+
+/* Texto Final */
+
+.texto3 {
+    padding-top: 7%;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/* Inicío da Descrição do Nicolas */
+
+.nicolas {
+    background-color: black;
+    border: rgb(255, 255, 155) 6px solid;
+    border-radius: 10px;
+    height: 40vh;
+    margin-top: 6%;
+    margin-left: 5%;
+    width: 88%;
+}
+
+.nicolas h1 {
+    margin-left: 5%;
+    font-style: italic;
+}
+
+.nicolas h2 {
+    margin-left: 4%;
+    font-style: italic;
+}
+
+.nicolas img {
+    position: absolute;
+    height: 35vh;
+    margin-top: -13.4%;
+    margin-left: 55%;
+    border-radius: 20px;
+    border: black 5px solid;
+}
+
+.nicolas .text_nicolas1 {
+    position: absolute;
+    font-size: 23px;
+    margin-left: 8%;
+}
+
+.nicolas .text_nicolas2 {
+    position: absolute;
+    font-size: 23px;
+    margin-left: 18%;
+}
+
+/* Fim da Descrição do Nicolas */
+
+
+
+/* Texto Final */
+
+.texto_final {
+    /* padding-top: 7%; */
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+/* Fim da Equipe */
 
 
 
