@@ -10,7 +10,48 @@
     
     <title> Thazzar - Login </title>
 </head>
-<body>
-    <img src="img/vila.jpg" alt="Tela de Login">
+<body background="img/vila.jpg">
+
+    <div class="seta_home">
+        <a href="index2.html"> <img src="img/seta_esquerda.png" alt="Voltar para a Home"> </a>
+        <span>
+            Home
+        </span>
+    </div>
+
+    <div class="tela_login">
+  
+        <h1 class="titulo_login"> Entre com a sua conta cadastrada </h1>
+  
+          <input type="text" id="email_login" placeholder="Insira aqui o seu EMAIL..." name="login">
+          <br>
+          <input type="password" id="senha_login" placeholder="Insira aqui a sua SENHA..." name="senha">
+          <br>
+          <button onclick="adentrar()" id="botao_adentrar"> Adentre! </button>
+  
+      </div>
+
+   <div class="tracejado"></div>
+   <footer class="embaixo">
+    <p class="triad_footer">
+      Direitos e Copyright reservados pela Triad Team ©
+    </p>
+
+  </footer>
+    
 </body>
 </html>
+
+<script>
+  function adentrar() {
+      if (email_login.value == "nick.beatthat@hotmail.com" && senha_login.value == "Yundnir") {
+        alert (`Olá, Nicolas Carvalho. E Boas-Vindas.`);
+        alert (`Agora, você tem acesso a história de Thazzar!`);
+        email_login.value = "";
+        senha_login.value = "";
+        location.href = 'menu_logado.html';
+      } else {
+        alert (`Um dos campos não foi preenchido corretamente. Tente novamente!`);
+      }
+    }
+</script>

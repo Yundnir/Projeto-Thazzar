@@ -10,7 +10,50 @@
 
     <title> Thazzar - Cadastre-se </title>
 </head>
-<body>
-    <img src="img/riften.jpg" alt="Tela de Cadastro">
+<body background = "img/riften.jpg">
+
+<div class="seta_home">
+        <a href="index2.html"> <img src="img/seta_esquerda.png" alt="Voltar para a Home"> </a>
+        <span>
+            Home
+        </span>
+    </div>
+
+    <div class="tela_cadastro">
+  
+        <h1 class="titulo_cadastro"> Cadastre-se agora e junte-se a Thazzar </h1>
+          
+          <input type="text" id="nome_cadastro" placeholder="Insira aqui o seu Nome Completo..." name="nome">
+          <br>
+          <input type="text" id="email_cadastro" placeholder="Insira aqui o seu EMAIL..." name="cadastro">
+          <br>
+          <input type="password" id="senha_cadastro" placeholder="Insira aqui a sua SENHA..." name="senha">
+          <br>
+          <button onclick="cadastrar()" id="botao_cadastrar"> Cadastrar! </button>
+  
+      </div>
+
+   <div class="tracejado"></div>
+   <footer class="embaixo">
+    <p class="triad_footer">
+      Direitos e Copyright reservados pela Triad Team ©
+    </p>
+
+  </footer>
+    
 </body>
 </html>
+
+<script>
+    function cadastrar() {
+    if (nome_cadastro.value == "" || email_cadastro.value == "" || senha_cadastro.value == "") {
+      alert (`Um dos campos não está preenchido corretamente. Tente novamente!`);
+    } else {
+      alert (`Seu cadastro foi aceito! Entre com sua conta recém criada!`);
+      nome_cadastro.value = "";
+      email_cadastro.value = "";
+      senha_cadastro.value = "";
+      location.href = "login.html"
+    }
+  }
+</script>
