@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/scroll.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="index2.html">
+    <link rel="stylesheet" href="cadastro.html">
+    <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
+    
+    <title> Entre com a sua Conta </title>
+</head>
+<body background="img/vila.jpg">
+
+    <div class="seta_home">
+        <a href="index.html"> <img src="img/seta_esquerda.png" alt="Voltar para a Home"> </a>
+        <span>
+            Home
+        </span>
+    </div>
+
+    <div class="tela_login">
+  
+        <h1 class="titulo_login"> Entre com a sua conta cadastrada </h1>
+  
+
+        <form id="form_login" method="post" onsubmit="return entrar()">
+            <input type="text" class="email_login" name="login" placeholder="Insira aqui o seu EMAIL...">
+            <br>
+            <input type="password" class="senha_login" name="senha" placeholder="Insira aqui a sua SENHA...">
+            <br>
+            <button id="btn_entrar"> Entrar! </button>
+        </form>
+
+        <div id="div_erro" class="msg_erro"> </div>
+  
+      </div>
+
+   <div class="tracejado"></div>
+   <footer class="embaixo">
+    <p class="triad_footer">
+      Direitos e Copyright reservados pela Triad Team ©
+    </p>
+
+  </footer>
+    
+</body>
+</html>
+
+<script>
+    function entrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = 'menu.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.visibility = 'visible';
+        div_erro.style.visibility = 'hidden';
+    }
+
+    function finalizar_aguardar(resposta) {
+        btn_entrar.disabled = false;
+        img_aguarde.style.visibility = 'hidden';
+        div_erro.style.visibility = 'visible';
+        div_erro.innerHTML = resposta;
+    }
+
+</script>

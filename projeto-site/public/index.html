@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/scroll.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/index.css">
+  <!-- <link rel="stylesheet" href="javascript/tela_inicial.js"> -->
+
+  <title> Thazzar - Home </title>
+</head>
+
+<body>
+
+    <div class="titulos">
+
+      <p class="um"> Conheça </p>
+
+      <p class="dois"> Thazzar </p>
+
+    </div>
+
+  <br>
+
+
+  <div class="textos_iniciais">
+    <p class="texto1"> Thazzar é um planeta que foi deixado pelos humanos, mas não foi abandonado completamente.
+      <br>
+      <br>
+      <br>
+      Existem, agora, seres grandiosos e exóticos que vivem no planeta de suas próprias formas,
+      <br>
+      <br>
+      <br>
+      e não se sabe ao certo como isso ocorreu ou quando ocorreu, apenas que
+      <br>
+      <br>
+      <br>
+      estas criaturas são... absurdamente familiares.
+    </p>
+  </div>
+
+    <div class="cidade">
+      <img src="img/fantasycity.jpg" alt="Kifflr">
+    </div>
+
+    <div class="textos_iniciais2">
+      <p class="texto2"> Se você REALMENTE quiser saber mais sobre estes seres e descobrir
+      <br>
+      <br>
+      <br>
+        o porquê este planeta é tão familiar,
+      <br>
+      <br>
+      <br>
+      entre mais a fundo na história de Thazzar acessando a sua conta.
+    </p>
+  </div>
+
+
+
+  <!-- Início da Parte de Login e Cadastro -->
+  <div class="login_cadastro">
+
+    <div id="tela_login">
+
+      <span class="titulo_login"> Entre com a sua conta aqui </span>
+
+      <button onclick="entrar_login()" id="botao_adentrar"> Login </button>
+      <br>
+      <span class="titulo1"> Se não possuir uma conta, não se preocupe. </span> 
+        <br>
+      <span class="titulo2"> Clique no botão abaixo para criar uma conta </span>
+
+      <button onclick="entrar_cadastro()" id="botao_cadastro"> Cadastre-se </button>
+      
+      <div class="aqua dismiss">
+        <img src="img/atlantis.jpg" id="aqua_city">
+      </div>
+
+    </div>
+
+  </div>
+  <!-- Fim da Parte de Login e Cadastro -->
+
+
+
+  <div class="bloco_preto"></div>
+  <div class="tracejado"></div>
+  
+   <footer class="embaixo">
+    <p class="triad_footer">
+      Direitos e Copyright reservados pela Triad Team ©
+    </p>
+
+  </footer>
+    
+</body>
+
+</html>
+
+<script>
+  function entrar_cadastro() {
+    location.href = "cadastro.html";
+  }
+
+  function entrar_login() {
+    location.href = "login.html";
+  }
+</script>

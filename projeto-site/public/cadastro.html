@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/scroll.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="index2.html">
+    <link rel="stylesheet" href="login.html">
+
+    <title> Cadastre-se em Thazzar </title>
+</head>
+<body background = "img/riften.jpg">
+
+<div class="seta_home">
+        <a href="index.html"> <img src="img/seta_esquerda.png" alt="Voltar para a Home"> </a>
+        <span>
+            Home
+        </span>
+    </div>
+
+      <div class="tela_cadastro">
+
+        <div class="container">
+            <h1> Cadastre-se agora e junte-se a Thazzar </h1>
+
+            <div class="formulario">
+
+                <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                    
+                    <input type="text" name="nome" id="nome_cadastro" placeholder="Insira aqui seu Nome Completo"  required minlength="8">
+                    <br>
+                    <input type="email" name="login" id="email_cadastro" placeholder="Seu Email para Login"  required minlength="8">
+                    <br>
+                    <input type="password" name="senha" id="senha_cadastro" placeholder="**********"  required minlength="8">
+                    <br>
+                    <input type="submit" onclick="validar()" id="btn_entrar" value="Cadastrar" class="botao_cadastrar">
+
+                </form>
+                
+                <img src="img/carregando.gif" id="img_aguarde" style="display: none; margin-left: 68%;margin-top: -13%;" width="100px">
+    
+                <div id="div_erro" style="background-color: #bf8899; color: maroon; display: none;">
+                    Erro no cadastro
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 
+    Coisas na API para verificar:
+
+    Caminho e Validação;
+
+    Criado 2 perfis: Nikao e Jailso;
+ -->
+
+   <div class="tracejado"></div>
+
+   <footer class="embaixo">
+    <p class="triad_footer">
+      Direitos e Copyright reservados pela Triad Team ©
+    </p>
+
+  </footer>
+    
+</body>
+</html>
+
+<script>
+    function validar() {
+
+if (nome_cadastro.value == "") {
+    alert("Campo nome de usuario invalido");
+
+} else if (email_cadastro.value == "") {
+    alert("Campo login invalido");
+
+} else if (senha_cadastro.value == "" || cadastro_senha.value < 8) {
+    alert("Campo Senha invalido");
+} else {
+
+}
+}
+
+
+function cadastrar() {
+    aguardar();
+    var formulario = new URLSearchParams (new FormData(form_cadastro) );
+    fetch("/usuarios/cadastrar", {
+        method: "POST",
+        body: formulario    
+    } ).then (function (response) {
+        
+        if (response.ok) {
+
+            window.location.href='login.html';
+
+        } else {
+
+            console.log('Erro de cadastro!');
+            response.text().then(function (resposta) {
+                div_erro.innerHTML = resposta;
+            });
+            finalizar_aguardar();
+        }
+    });
+
+    return false;
+}
+
+function aguardar() {
+    btn_entrar.disabled = true;
+    img_aguarde.style.display='block';
+    div_erro.style.display='none';
+}
+
+function finalizar_aguardar() {
+    btn_entrar.disabled = false;
+    img_aguarde.style.display='none';
+    div_erro.style.display='block';
+}
+
+</script>
