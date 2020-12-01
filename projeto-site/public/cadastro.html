@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/scroll.png" type="image/x-icon">
     <link rel="stylesheet" href="css/cadastro.css">
-    <link rel="stylesheet" href="index2.html">
     <link rel="stylesheet" href="login.html">
+    <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
+
 
     <title> Cadastre-se em Thazzar </title>
 </head>
@@ -70,16 +71,14 @@
     function validar() {
 
 if (nome_cadastro.value == "") {
-    alert("Campo nome de usuario invalido");
+    alert("Nome Inválido! Tente novamente.");
 
 } else if (email_cadastro.value == "") {
-    alert("Campo login invalido");
+    alert("Email Inválido! Tente novamente.");
 
 } else if (senha_cadastro.value == "" || cadastro_senha.value < 8) {
-    alert("Campo Senha invalido");
-} else {
-
-}
+    alert("Senha Inválida! Tente novamente.");
+   }
 }
 
 

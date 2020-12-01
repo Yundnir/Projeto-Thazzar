@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Thazzar </title>
+    <title> Thazzar - Home </title>
     <link rel="shortcut icon" href="img/scroll.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/menu_logado.css">
+    <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="index.html">
-    <link rel="stylesheet" href="login.html">
-    <script type="text/javascript"></script>
-
+    <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="funcoes.js"></script>
 </head>
-
 <script>
 
     let usuario;
@@ -21,32 +19,32 @@
 </script>
 
 <body onload="verificar_autenticacao()">
-
+<body>
+    
     <!-- Voltar para a Tela Inicial (index) -->
     <div class="seta_home">
         <a href="index.html"> <img src="img/seta_esquerda.png" alt="Voltar para a Home"> </a>
         <span>
-            Home
+            <a href="index.html"> Home </a>
         </span>
     </div>
-
 
 
     <!-- Ir para os Personagens -->
     <div class="seta_personagens">
         <span>
-            Personagens
+            <a href="#intro_historia"> Personagens </a>
         </span>
-        <a> <img src="img/seta_baixo.png" alt="Ir para os Personagens"> </a>
+        <a href="#intro_historia"> <img src="img/seta_baixo.png" alt="Ir para os Personagens"> </a>
     </div>
 
 
     <!-- Ir para a Equipe -->
     <div class="seta_equipe">
         <span>
-            Equipe
+            <a href="#intro_equipe"> Equipe </a>
         </span>
-        <a> <img src="img/seta_baixo.png" alt="Ir para a Equipe"> </a>
+        <a href="#intro_equipe"> <img src="img/seta_baixo.png" alt="Ir para a Equipe"> </a>
     </div>
 
     <div class="wallpaper">
@@ -54,13 +52,21 @@
     </div>
 
 
+    <!-- Mensagem de entrada ao Usuario -->
+    <div class="msg">
+        <ul>
+            <li> 
+                Olá, <b id="b_usuario"> </b> 
+            </li>
 
-<div class="conteudo_site1">
-    <span class="cumprimentos"> Olá, <a> Nicolas Carvalho. </a> </span>
-    <img src="img/perfil.png" alt="Perfil">
-</div>
+            <li> 
+                <a href="" onclick="logoff()"> LOGOUT </a> 
+            </li>
+        </ul>
+    </div>
 
-<div class="texto_introducao">
+
+<div class="texto_introducao" id="intro_historia">
     <span>
         Logo abaixo, você poderá acessar 
         <br>
@@ -76,7 +82,6 @@
         
 
 <!-- Início da Descrição sobre Yün'dnir -->
-
         <div class="yundnir_aberto">
 
             <div class="titulo_yundnir">
@@ -153,21 +158,22 @@
                         <br> 
                         suas diversões pessoais.
                     </span>
+
+                    <div class="feedback">
+
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
-
-
-
 <!-- Fim da Descrição sobre Yün'dnir -->
 
 
 
 
 <!-- Início da Descrição sobre Khanneigg -->
-
 <div class="khanneigg_aberto">
 
     <div class="titulo_khanneigg">
@@ -263,7 +269,7 @@
 
 
 <!-- Introdução para a Equipe -->
-<div class="texto_introducao2">
+<div class="texto_introducao2" id="intro_equipe">
     <span>
         Esse projeto começou “do nada”, como uma idéia que 
         <br>
@@ -389,17 +395,28 @@
 
 
 
-<div class="texto_final">
+<div class="final_site">
     <span>
         Obrigado por acessar nosso site! :D
     </span>
 </div>
 
+<!-- <div class="like">
+    <span> Gostei </span>
+    <img src="img/like.png" alt="I Like It">
+</div>
+
+<div class="unlike">
+    <span> Não Gostei </span>
+    <img src="img/unlike" alt="Don't Like It">
+</div> -->
+
 <div class="tracejado"></div>
 <footer class="embaixo">
-    <p class="triad_footer">
+    <span class="triad_footer">
         Direitos e Copyright reservados pela Triad Team ©
-    </p>
+    </pan>
+
 </footer>
     
 </body>

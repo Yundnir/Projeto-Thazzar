@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/scroll.png" type="image/x-icon">
     <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="index2.html">
-    <link rel="stylesheet" href="cadastro.html">
     <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
     
     <title> Entre com a sua Conta </title>
@@ -33,7 +31,9 @@
             <button id="btn_entrar"> Entrar! </button>
         </form>
 
+
         <div id="div_erro" class="msg_erro"> </div>
+        <img src="img/carregando.gif" id="img_aguarde" style="display: none; margin-left: 68%; margin-top: -13%;" width="100px">
   
       </div>
 
@@ -64,7 +64,7 @@
                     sessionStorage.login_usuario_meuapp = json.login;
                     sessionStorage.nome_usuario_meuapp = json.nome;
 
-                    window.location.href = 'menu.html';
+                    window.location.href = 'sobre.html';
                 });
 
             } else {
