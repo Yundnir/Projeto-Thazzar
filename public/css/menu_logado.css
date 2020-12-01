@@ -34,6 +34,7 @@ body {
 }
 
 
+
 /* Personagens */
 .seta_personagens img {
     height: 8vh;
@@ -75,17 +76,17 @@ body {
 
 /* Início da Descrição de Personagens */
 
-.seta_oculta1 img {
+/* .seta_oculta1 img {
     height: 40px;
     margin-top: -1%;
     margin-left: 50%;
-}
+} */
 
-.seta_aberta1 img {
+/* .seta_aberta1 img {
     height: 40px;
     margin-top: 5%;
     margin-left: 210%;
-}
+} */
 
 .cumprimentos {
     font-size: 31px;
@@ -118,7 +119,7 @@ body {
     background-color: white;
     border: black 3px solid;
     border-radius: 7px;
-    height: 63vh;
+    height: 220vh;
     width: 90%;
     margin-left: 5%;
 }

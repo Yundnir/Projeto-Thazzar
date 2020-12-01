@@ -1,11 +1,10 @@
 module.exports = {
   production: {
     // username é o nome de usuário no MySQL Workbench;
-    // 
-    username: 'bd_sqlThazzar', 
+    username: 'admThazzar', 
     password: '#Gf51004386818',
-    database: 'bdThazzar',
-    host: 'URL_DO_SEU_BANCO_DE_DADOS.database.windows.net',
+    database: 'bdProjetoSite',
+    host: 'thazzar.database.windows.net',
     dialect: 'mssql',
     xuse_env_variable: 'DATABASE_URL',
     dialectOptions: {

@@ -43,7 +43,7 @@ body {
     font-family: 'Kanit', sans-serif;
 }
 
-#nome_cadastro {
+.nome_cadastro {
     font-family: monospace;
     text-align: center;
     margin-top: 5%;
@@ -51,11 +51,12 @@ body {
     border: none;
     border-bottom: black 3px solid;
     color: black;
-    height: 8%;
+    height: 30px;
     width: 55%;
 }
 
-#email_cadastro {
+
+.email_cadastro {
     font-family: monospace;
     text-align: center;
     margin-top: 7%;
@@ -63,23 +64,23 @@ body {
     border: none;
     border-bottom: black 3px solid;
     color: black;
-    height: 7%;
+    height: 30px;
     width: 50%;
 }
 
-#senha_cadastro {
+.senha_cadastro {
     font-family: monospace;
     text-align: center;
-    margin-top: 7%;
+    margin-top: 8%;
     background-color: transparent;
     border: none;
     border-bottom: black 3px solid;
     color: black;
-    height: 7%;
+    height: 30px;
     width: 45%;
 }
 
-#botao_cadastrar {
+.botao_cadastrar {
     background-color: black;
     border-radius: 25px;
     border: 1px;
@@ -89,6 +90,7 @@ body {
     font-family: monospace;
     color: white;
 }  
+
 
 
 .tracejado {
